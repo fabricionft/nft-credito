@@ -1,0 +1,35 @@
+.btns{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dividido{
+  width: 50%;
+}
+
+.completo{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btnSPaginacao{
+  width: 100%;
+  display: flex;
+}
+
+.btnPaginacao{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 7.5px;
+}
+
+.botaoSelecionado{
+  filter: brightness(60%);
+}
+
+@media screen and (max-width: 750px) {
+  .dividido{width: 100%;}
+  .completo{margin: 0;}
+}

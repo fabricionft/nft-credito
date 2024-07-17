@@ -1,0 +1,25 @@
+.containerCardLoader{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sobreposicao);
+  z-index: 2;
+  top: 0;
+}
+
+.cardLoader{
+  width: 225px;
+  height: 200px;
+  background-color: var(--secundaria);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifLoader{
+  width: 50px;
+}

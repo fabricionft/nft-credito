@@ -1,0 +1,139 @@
+.botoesLista{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.acoes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buscas{display: flex;}
+
+.buscarPornome, .ordenarNome{margin-bottom: 0;}
+
+.buscarPornome{
+  width: 175px;
+  margin-right: 15px;
+}
+
+.ordenarNome{
+  background-color: var(--primaria);
+  width: fit-content;
+  color: #fff;
+}
+
+.inteiro{width: 100%;}
+.inteiro:nth-child(2){margin-top: 15px;}
+.metade{width: 40%;}
+
+.containerClientes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aviso{
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cliente{
+  width: 18.75%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundaria);
+  margin-left: 1.5%;
+  margin-bottom: 20px;
+  border-radius: 7.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  text-decoration: none;
+}
+
+.cliente:nth-child(5n + 1){margin-left: 0;}
+
+.cliente:hover{
+  filter: brightness(95%);
+}
+
+.margemClinte{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.nomeCliente{
+  font-size: 20px;
+  text-align: center;
+}
+
+.dataCadastroCliente{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.horarioCadastroCliente{
+  margin: 2.5px 0 0 0;
+  font-size: 12.5px;
+}
+
+
+@media screen and (max-width: 1150px){
+  .cliente, .cliente:nth-child(5n + 1){
+    width: 23.8%;
+    margin-left: 1.5%;
+  }
+
+  .cliente:nth-child(4n + 1){margin-left: 0;}
+}
+
+@media screen and (max-width: 800px){
+  .cliente,  .cliente:nth-child(4n + 1), .cliente:nth-child(5n + 1){
+    width: 31.5%;
+    margin-left: 2.5%;
+  }
+
+  .cliente:nth-child(3n + 1){margin-left: 0;}
+}
+
+@media screen and (max-width: 750px){
+  .acoes, .buscas, .btnSPaginacao{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .buscas{margin: 15px 0;}
+
+  .buscarPornome{width: 55%;}
+  .ordenarNome{width: 35%;}
+}
+
+@media screen and (max-width: 650px){
+  .containerClientes{justify-content: space-between;}
+
+  .cliente, .cliente:nth-child(3n + 1), .cliente:nth-child(4n + 1), .cliente:nth-child(5n + 1){
+    width: 48%;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 450px){
+  .cliente, .cliente:nth-child(3n + 1), .cliente:nth-child(4n + 1), .cliente:nth-child(5n + 1){
+    width: 100%;
+  }
+}

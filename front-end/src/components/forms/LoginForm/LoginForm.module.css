@@ -1,0 +1,25 @@
+.linha{
+  width: 100%;
+  position: relative;
+}
+
+.iconForm{
+  cursor: pointer;
+  position: absolute;
+  width: 22.5px;
+  top: 10px;
+  right: 10px;
+}
+
+.recuperarSenha{
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  color: var(--texto);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recuperarSenha:hover{
+  filter: brightness(75%);
+}

@@ -1,0 +1,66 @@
+.containerFormTrocarSenha{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--sobreposicao);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.formTrocarSenha{
+  width: 300px;
+  background-color: var(--secundaria);
+  border-radius: 10px;
+  position: relative;
+}
+
+.margemFormTrocarSenha{
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconFechar{
+  filter: brightness(100%);
+  position: absolute;
+  width: 25px;
+  right: 0;
+  top: -40px;
+  cursor: pointer;
+}
+
+.linhaMudarVisibilidadeInputs{
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.linhaMudarVisibilidadeInputs span{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exibir{background-color: rgb(255, 88, 88);}
+.esconder{background-color: rgb(1, 206, 175);}
+
+.linhaMudarVisibilidadeInputs p{
+  margin: 0 0 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linhaMudarVisibilidadeInputs span:hover{
+  filter: brightness(90%);
+}
+@media screen and (max-width: 450px){
+  .formTrocarSenha{width: 90%;}
+}

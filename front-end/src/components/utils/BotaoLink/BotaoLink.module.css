@@ -1,0 +1,26 @@
+.botaoLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaria);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.botaoLink:hover{filter: brightness(90%);}
+
+.margem{margin:0 12.5px;}
+
+@media screen and (max-width: 550px){
+  .botaoLink{
+    width: 100%;
+  }
+}

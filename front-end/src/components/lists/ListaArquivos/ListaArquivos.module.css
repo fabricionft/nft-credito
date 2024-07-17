@@ -1,0 +1,55 @@
+/*Arquivos*/
+.arquivo{
+  width: 100%;
+  background-color: var(--impar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aviso{
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.par{
+  background-color: var(--par);
+}
+
+.nomeArquivo{
+  font-size: 15px;
+  margin: 0 0 0 10px;
+}
+
+.btnsArquivo{
+  display: flex;
+  align-items: center;
+}
+
+.btnDownloadArquivo, .btnExcluirArquivo{
+  background-color: var(--primaria);
+  width: 30px;
+  height: 30px;
+  margin: 6px 10px 6px 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.btnDownloadArquivo:hover, .btnExcluirArquivo:hover{
+  filter: brightness(95%);
+  background-color: var(--hoverBotaoArquivo);
+}
+
+.btnExcluirArquivo{
+  margin: 6px 0 6px 0;
+}
+
+.iconBtnArquivo{width: 20px;}
+
+.btnAdcionarArquivo{
+  margin-top: 20px;
+}

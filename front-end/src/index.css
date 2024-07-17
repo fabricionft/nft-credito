@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--fundo);
+}
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*Tenmplates elementos*/
+h1{
+  color: var(--titulo);
+  margin: 0;
+}
+
+p, span, strong{
+  color: var(--texto);
+  margin: 0;
+}
+
+label{
+  margin: 0 0 5px 0;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+button{
+  height: 40px;
+  background-color: var(--primaria);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+button:hover{filter: brightness(90%);}
+
+form{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+form button{
+  margin-top: 10px;
+}
+
+form select{margin-bottom: 20px;}
+
+input, select, textarea{
+  width: calc(100% - 12px);
+  border: none;
+  height: 40px;
+  background-color: var(--input);
+  color: var(--texto);
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+input::placeholder, textarea::placeholder{
+  color: var(--texto);
+}
+
+textarea{width: calc(100% - 20px)}
+
+img{
+  filter: brightness(var(--brilho));
+}
+
+
+/*templates estilizações*/
+.desativado, .desativado:hover{
+  cursor: initial;
+  filter: brightness(65%);
+}
+
+.sucesso{
+  color: green;
+}
+
+.falha{
+  color: red;
+}
+
+
+/*Variaveis*/
+.temaClaro:root{
+  --fundo: #ffffff;
+  --primaria: #8876ff;
+  --secundaria: #f2f1fb;
+  --titulo: #2a2929;
+  --texto: rgb(87, 87, 87);
+  --strong: rgb(53, 53, 53);;
+  --textoClaro: #fff;
+  --input: #efedf8;
+  --sombra: rgba(0, 0, 0, 0.065);
+  --sobreposicao: rgba(0, 0, 0, 0.35);
+  --par: transparent;
+  --impar: rgba(141, 127, 243, 0.145);
+  --brilho: 30%;
+  --footer: #8876ff;
+  --hoverBotaoArquivo: #8876ff5c;
+  --btnHeader: rgb(86, 86, 86);
+}
+
+.temaEscuro:root{
+  --fundo: #212121;
+  --primaria: #6c5cd0;
+  --secundaria: #323232;
+  --titulo: #ffffff;
+  --texto: rgb(226, 226, 226);
+  --strong: #fff;
+  --textoClaro: #fff;
+  --input: rgb(67, 67, 67);
+  --sombra: rgba(136,118,255, 0.1);
+  --sobreposicao: rgba(0, 0, 0, 0.5);
+  --par: transparent;
+  --impar: rgb(69, 69, 69);
+  --brilho: 100%;
+  --footer: #272626;
+  --hoverBotaoArquivo: #6c5cd0;
+  --btnHeader: #8876ff;
+}
+
+@media screen and (max-width: 400px){
+  form{
+    width: 100%;
+  }
+}

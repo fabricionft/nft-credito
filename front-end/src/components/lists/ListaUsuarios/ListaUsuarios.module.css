@@ -1,0 +1,87 @@
+.painelUsuarios{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalhoUsuarios{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.filtros{
+  display: flex;
+  margin-left:auto;
+}
+
+.filtros input, select {
+  margin: 0;
+}
+
+.filtros select{
+  width: 100px;
+  margin-left: 10px;
+}
+
+.usuarios{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.usuario{
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundaria);
+
+}
+.par{background-color: var(--par)}
+
+.margemUsuario{
+  width: 100%;
+  margin: 12.5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coluna1, .coluna2, .coluna3, .coluna4{
+  width: 12.5%;
+  display: flex;
+  margin: 0;
+  font-size: 14px;
+}
+
+.infos{
+  width: 82.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coluna1{width: 15%; font-weight: bold;}
+.coluna2{width: 45%;}
+.coluna3{width: 35%;}
+.coluna4{justify-content: center;}
+
+
+@media screen and (max-width: 750px) {
+  .filtros{
+    width: 100%;
+    margin: 0 0 15px auto;
+  }
+
+  .usuarioA{display: none;}
+
+  .infos{width: 65%;}
+  .coluna4{width: 30%;}
+
+  .coluna1, .coluna2, .coluna3{width: 100%;}
+
+  .coluna1, .coluna2, .coluna3, .coluna4{padding: 0;}
+
+  .coluna2{margin: 5px 0;}
+}

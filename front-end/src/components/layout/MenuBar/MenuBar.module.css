@@ -1,0 +1,107 @@
+.inputMenuBar:checked~.esconder{
+  transform: translateX(100%);
+}
+
+.inputMenuBar:checked~.menuBar{
+  transform: translateX(100%);
+  box-shadow: 0 4px 8px var(--primaria), 0 8px 16px var(--primaria);
+}
+
+.inputMenuBar{display: none;}
+
+.esconder{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  z-index: 2;
+  background-color: var(--sobreposicao);
+  cursor: pointer;
+}
+
+
+.menuBar{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  left: -20%;
+  background-color: var(--primaria);
+  transition: 0.75s;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.margemMenuBar{
+  width: 85%;
+  height: 85%
+}
+
+.linksSessao{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoLinkSessao{
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 0;
+  color: var(--textoClaro);
+}
+
+.strongLinkSessao{
+  cursor: pointer;
+  color: var(--texto);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--textoClaro);
+}
+
+.linksPaginas{
+  width: 100%;
+}
+
+.linkPagina{
+  background: var(--primaria);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 7.5px;
+  text-decoration: none;
+  color: var(--textoClaro);
+}
+
+.linkPagina:hover{filter: brightness(90%);}
+
+.iconLink{
+  width: 25px;
+  margin: 0 7.5px 0 5px;
+  filter: brightness(100%);
+}
+
+.textoLinkPagina{
+  font-weight: bold;
+  margin: 0;
+  color: var(--textoClaro);
+}
+
+
+@media screen and (max-width: 950px) {
+  .menuBar{
+    left: -50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .menuBar{
+    left: -75%;
+    width: 75%;
+  }
+}

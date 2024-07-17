@@ -1,0 +1,16 @@
+.linhaDataNascimento{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectData{
+  width: 31%;
+}
+
+textarea{
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 7.5px;
+  height: 125px;
+}

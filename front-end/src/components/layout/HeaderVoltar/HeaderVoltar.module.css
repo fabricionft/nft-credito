@@ -1,0 +1,22 @@
+.cabecalhoVoltar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7.5vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--fundo);
+  z-index: 2;
+}
+
+.margemCabecalhoVoltar{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.iconVoltar{
+  margin-top: 10px;
+  width: 18.5px;
+}

@@ -1,0 +1,115 @@
+.escolhaConteudo{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.escolhaConteudo p{
+  cursor: pointer;
+}
+
+.selecionado{
+  font-weight: bold;
+  text-shadow: 0 0 25px var(--texto), 0 0 18px var(--texto);
+}
+
+.cliente{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundaria);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  border-radius: 7.5%;
+}
+
+.margemCliente{
+  width: 92.5%;
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divisor{
+  margin: 0 auto 20px 20px;
+}
+
+.divisor label{
+  font-weight: bold;
+}
+
+.btns{
+  width: 100%;
+  display: flex;
+}
+
+.btnSPaginacao{
+  width: 100%;
+  display: flex;
+}
+
+.btnPaginacao{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 7.5px;
+}
+
+.botaoSelecionado{
+  background-color: rgb(1, 206, 175);
+}
+
+.acao{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.acao:nth-child(2){margin-top: 7.5px;}
+
+.adcionar{
+  background-color: rgb(0, 196, 127, 0.1);
+}
+
+.atualizar{
+  background-color: rgb(0, 106, 255, 0.1);
+}
+
+.excluir{
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.margemAcao{
+  width: 100%;
+  margin: 15px;
+}
+
+.dataAcao{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dia{
+  width: fit-content;
+  background-color: var(--primaria);
+  font-size: 17.5px;
+  font-weight: bold;
+  padding: 7px;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 7.5px;
+  cursor: pointer;
+}
+
+.tituloAcao{
+  margin: 5px 0 7.5px 0;
+  font-size: 15px;
+}
+
+ul, li{color: var(--texto); font-size: 14px;}
+
+ul{margin: 0 0 0 -25px;}
+
+@media screen and (max-width: 550px) {
+  .divisor{width: 100%; margin: 0 0 20px 0;}
+}

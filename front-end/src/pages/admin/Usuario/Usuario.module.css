@@ -1,0 +1,36 @@
+.usuario{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundaria);
+  border-radius: 7.5px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  margin-bottom: 25px;
+}
+
+.margemUsuario{
+  display: flex;
+  width: 92.5%;
+  margin: 25px 0 5px 0;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.divisor{
+  margin: 0 auto 20px 20px;
+}
+
+.divisor label{
+  color: var(--titulo);
+  font-weight: bold;
+}
+
+.divisor p {color: var(--texto);}
+
+@media screen and (max-width: 500px){
+  .divisor{
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

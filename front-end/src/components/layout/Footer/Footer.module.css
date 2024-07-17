@@ -1,0 +1,83 @@
+.rodape{
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--primaria);
+}
+
+.margemRodape{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginas{
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloSessao, .textoContato, .linkPagina{font-family: FuturaBook;}
+
+.tituloSessao{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18.5px;
+  text-align: center;
+}
+
+.textoContato, .linkPagina{
+  font-size: 14px;
+  color: #dadada;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+}
+
+.textoContato:hover, .linkPagina:hover{
+  filter: brightness(90%);
+  text-decoration: underline;
+}
+
+.redes{
+  display: flex;
+  align-items: center;
+}
+
+.linkRede{margin-left: 15px;}
+.linkRede:nth-child(1){margin-left: 0;}
+
+.iconRede{
+  filter: brightness(100%);
+  width: 40px;
+  cursor: pointer;
+}
+
+.iconRede:hover{filter: brightness(90%);}
+
+/*Disclamer*/
+.disclamer{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #5c4fb3;
+}
+
+.textoDisclamer{
+  margin: 0 20px 0 20px;
+  font-size: 13.5px;
+  color: #fff;
+}
+
+@media screen and (max-width: 525px) {
+  .margemRodape{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 20px 0;
+  }
+}

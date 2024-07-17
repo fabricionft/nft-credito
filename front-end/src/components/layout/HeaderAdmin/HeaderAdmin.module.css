@@ -1,0 +1,11 @@
+.cabecalhoAdmin{
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconVoltar{
+  cursor: pointer;
+  width: 18.5px;
+}

@@ -1,0 +1,13 @@
+.containerLoader{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamanhoRelativo{height: auto;}
+
+.loader{width: 50px;}
+
+.reduzido{width: 35px;}
